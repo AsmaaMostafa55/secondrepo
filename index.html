@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <link rel="icon" href="./css/bookmark-png-high-quality-image-13559.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC&family=Dancing+Script:wght@500;600&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC&family=Dancing+Script:wght@500;600&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200;300;400&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC&family=Dancing+Script:wght@500;600&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200;300;400&family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Amatic+SC&family=Dancing+Script:wght@500;600&family=Montserrat&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@200;300;400&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body class="bodycol">
+
+
+    <div class="d-flex justify-content-center align-items-center vh-100 position-absolute mx-auto d-none modal p-5 " id="message">
+        <div class="  xx  ">
+            <div class="d-flex  justify-content-between p-1">
+            <div class="circles mb-2">
+                
+                <i class="fa-solid fa-circle cir1"></i>
+                <i class="fa-solid fa-circle cir2"></i>
+                <i class="fa-solid fa-circle cir3"></i>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="none()"></button>
+            </div>
+       
+            <h5 class="my-3">
+                Site Name or Url is not valid, Please follow the rules below :
+            </h5>
+            <div class="mt-4">
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-right px-3"></i><p class="pa">Site name must contain at least 3 characters</p>
+            </div>
+          
+            <div class="d-flex">
+                <i class="fa-solid fa-arrow-right px-3"></i><p class="pa">Site URL must be a valid one</p>
+            </div>
+          
+        </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container ">
+        <div class=" d-flex justify-content-center align-items-center">
+         <div class="hh">
+                <h1 >Bookmarker</h1>
+            </div>
+            </div>
+            <div class="line">
+            </div>
+<div class="d-flex justify-content-center aligh-items-center ">
+    <h2 class="dd">
+    <i class="fa-solid fa-bookmark ico"></i>
+     Bookmark your favourite sites
+    <i class="fa-solid fa-bookmark icon"></i>
+
+</h2>
+</div>
+<label for="siten" class="m-2">
+    <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name
+
+</label>
+<input type="text" id="siten" placeholder="Bookmark name" class="form-control my-3 siten input" oninput="validationname()">
+<label for="siteu" class="m-2">
+    <i class="fa-solid fa-link pe-2"></i>Site Url
+
+</label>
+
+
+
+
+
+
+
+
+<input type="text" id="siteu" placeholder="Site Url" class="form-control my-3 siten input" oninput="validationmail()">
+<div class="d-flex justify-content-center align-items-center">
+    <button type="button " class="btn but " id="but">submit</button><br>
+    <button type="button " class="btn but d-none " id="butt" >update</button>
+
+</div>''
+<div class="line">
+</div>
+
+<input type="search" class="w-75 mx-auto form-control mb-3" placeholder="search..." id="search" oninput="search()">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>index</th>
+            <th>websitename</th>
+            <th>visit</th>
+            <th>delete</th>
+            <th>update</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        
+    </tbody>
+</table>
+
+
+
+
+    </div>
+   
+ 
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
